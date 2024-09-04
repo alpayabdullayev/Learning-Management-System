@@ -10,6 +10,7 @@ import { StudentsModule } from './students/students.module';
 import { TaskModule } from './task/task.module';
 import { SubjectModule } from './subject/subject.module';
 import { GradeModule } from './grade/grade.module';
+import { AuthModule } from './auth/auth.module';
 
 import * as path from 'path';
 
@@ -38,6 +39,7 @@ import * as path from 'path';
     TaskModule,
     SubjectModule,
     GradeModule,
+    AuthModule,
 
   ],
   controllers: [AppController],
