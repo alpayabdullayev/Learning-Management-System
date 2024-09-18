@@ -9,7 +9,7 @@ import { SubjectEntity } from "../../subject/entities/subject.entity";
 @Entity('groups')
 export class GroupEntity extends BaseEntity {
     @ApiProperty()
-    @Column({ type: 'varchar', name: 'group_name', nullable: false })
+    @Column({ type: 'varchar', name: 'group_name', nullable: false,unique: true  })
     groupName: string;
 
     @ApiProperty()

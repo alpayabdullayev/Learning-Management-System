@@ -6,13 +6,15 @@ import { UserEntity } from '../user/user.entity';
 
 @Injectable()
 export class StudentsService {
-    constructor(
-        @InjectRepository(StudentEntity)
-        private readonly studentRepository: Repository<StudentEntity>,
-      ) {}
-    
-      async create(user: UserEntity) {
-        const student = this.studentRepository.create({ user });
-        return this.studentRepository.save(student);
-      }
+  constructor(
+    @InjectRepository(StudentEntity)
+    private readonly studentRepository: Repository<StudentEntity>,
+  ) {}
+
+  async create(user: UserEntity) {
+    const student = this.studentRepository.create({ user });
+    return this.studentRepository.save(student);
+  }
+
+
 }
